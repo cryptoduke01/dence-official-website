@@ -1,8 +1,18 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url('https://fonts.cdnfonts.com/css/bebas-neue');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 *{
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;                                                      
 }
+
+@layer base {
+    body {
+      @apply antialiased;
+    }
+    
+    p {
+      @apply text-base md:text-lg leading-relaxed;
+    }
+  }
